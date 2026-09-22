@@ -9,23 +9,6 @@ Official website for **Global Nurses Alliance Incorporated (GNAI)**, a healthcar
 
 ---
 
-## 🌟 Mission & Vision
-
-- **Mission:** GNAI is devoted to creating health and well-being programs, projects, activities, events, products, and innovations that can be duplicated, are formative, and life-changing, serving as an avenue in developing society to its fullest potential.
-- **Vision:** To propel the nursing profession to its vocation by uplifting the underserved, underrepresented, and distraught members of society through inter-agency collaboration and linkage.
-- **Founder's Creed:** *"If you are in service to others, you are in service to God."* — Charles S. Cledera, BSN, RN
-
----
-
-## 🏥 Leadership & Governance
-
-- **Founder & President/CEO:** Charles S. Cledera, BSN, RN (DAISY Extraordinary Nurse of the Year, Certified Chemotherapy Provider, 32+ Years Medical Mastery)
-- **Executive Leadership:** Mark Angelo Ilay (VP/COO), Maria Rosario Coons (Secretary), Yvette Marie Datar (Executive Secretary), Marlon Borja Multo (Treasurer), Almon John P. Cledera (Director of Operations), Frances Jacqueline Y. Young, RPM (Program Director), Nebiel Arceo (Creative & Social Media Manager)
-- **Board of Directors:** Glen Madea, Sharon Pelaez, Jasmin Candelaria, Minnie Tulali, Marites Erwin, Alma Tomenio, Nebiel Arceo, Princess Xylene Gomez
-- **Nevada Hospital Ambassadors:** Bridging care across Spring Valley Hospital, Sunrise Hospital, Saint Rose Dominican, Summerlin Hospital, UMC, Mountain View, Valley Hospital, and regional health networks.
-
----
-
 ## 🛠️ Tech Stack & Key Features
 
 - **Frontend:** React 18, Vite, Tailwind CSS, Lucide Icons
