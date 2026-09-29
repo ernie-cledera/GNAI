@@ -43,6 +43,20 @@ export default function App() {
 
   const isAnyModalOpen = donateModalOpen || volunteerModalOpen;
 
+  React.useEffect(() => {
+    if (isAnyModalOpen) {
+      document.body.style.overflow = 'hidden';
+      document.documentElement.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+      document.documentElement.style.overflow = '';
+    }
+    return () => {
+      document.body.style.overflow = '';
+      document.documentElement.style.overflow = '';
+    };
+  }, [isAnyModalOpen]);
+
   return (
     <div className="min-h-screen flex flex-col bg-slate-50 text-slate-800">
       {/* Navigation */}

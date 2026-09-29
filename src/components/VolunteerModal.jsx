@@ -3,21 +3,13 @@ import { X, CheckCircle2, Send, Users, ShieldCheck } from 'lucide-react';
 import { organizationInfo } from '../data/organizationData';
 
 export default function VolunteerModal({ isOpen, onClose }) {
-  if (!isOpen) return null;
-
   const [submitted, setSubmitted] = useState(false);
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [role, setRole] = useState('Registered Nurse (RN)');
   const [hospital, setHospital] = useState('');
 
-  // Lock background scroll when modal is active
-  useEffect(() => {
-    document.body.style.overflow = 'hidden';
-    return () => {
-      document.body.style.overflow = '';
-    };
-  }, []);
+  if (!isOpen) return null;
 
   const handleSubmit = (e) => {
     e.preventDefault();

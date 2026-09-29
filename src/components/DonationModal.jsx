@@ -3,8 +3,6 @@ import { X, Heart, ShieldCheck, CheckCircle, CreditCard, Landmark, DollarSign, M
 import { organizationInfo } from '../data/organizationData';
 
 export default function DonationModal({ isOpen, onClose, initialData }) {
-  if (!isOpen) return null;
-
   const [amount, setAmount] = useState(initialData?.amount || 100);
   const [isMonthly, setIsMonthly] = useState(initialData?.isMonthly || false);
   const [designation, setDesignation] = useState(initialData?.designation || 'Medical Missions & Prescriptions');
@@ -13,13 +11,19 @@ export default function DonationModal({ isOpen, onClose, initialData }) {
   const [paymentMethod, setPaymentMethod] = useState('card');
   const [isSuccess, setIsSuccess] = useState(false);
 
-  // Lock background scroll when modal is active
   useEffect(() => {
-    document.body.style.overflow = 'hidden';
-    return () => {
-      document.body.style.overflow = '';
-    };
-  }, []);
+    if (initialData?.amount) {
+      setAmount(initialData.amount);
+    }
+    if (typeof initialData?.isMonthly === 'boolean') {
+      setIsMonthly(initialData.isMonthly);
+    }
+    if (initialData?.designation) {
+      setDesignation(initialData.designation);
+    }
+  }, [initialData]);
+
+  if (!isOpen) return null;
 
   const handleDonateSubmit = (e) => {
     e.preventDefault();
