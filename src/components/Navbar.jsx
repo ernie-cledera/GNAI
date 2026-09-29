@@ -59,15 +59,15 @@ export default function Navbar({ onOpenDonate, onOpenVolunteer }) {
   return (
     <header className="sticky top-0 z-40 w-full transition-all duration-300">
       {/* Top Non-Profit Banner */}
-      <div className="bg-slate-900 text-slate-200 text-[11px] sm:text-xs py-1.5 sm:py-2 px-3 sm:px-4 border-b border-slate-800">
+      <div className="bg-slate-950 text-slate-200 text-[11px] sm:text-xs py-1.5 sm:py-2 px-3 sm:px-4 border-b border-slate-800">
         <div className="max-w-7xl mx-auto flex items-center justify-between gap-1">
           <div className="flex items-center space-x-2 truncate">
-            <span className="inline-flex items-center px-2 py-0.5 rounded-full font-semibold bg-teal-900/80 text-teal-300 border border-teal-700/50 text-[10px] sm:text-xs flex-shrink-0">
-              <ShieldCheck className="w-3 h-3 mr-1" /> 501(c)(3) Non-Profit
+            <span className="inline-flex items-center px-2 py-0.5 rounded-full font-semibold bg-amber-400/20 text-amber-300 border border-amber-400/30 text-[10px] sm:text-xs flex-shrink-0">
+              <ShieldCheck className="w-3 h-3 mr-1 text-amber-400" /> 501(c)(3) Non-Profit
             </span>
             <span className="text-slate-400 hidden xs:inline">|</span>
             <span className="hidden xs:inline text-slate-300 truncate">
-              <MapPin className="w-3 h-3 mr-1 text-teal-400 inline" /> Las Vegas, NV
+              <MapPin className="w-3 h-3 mr-1 text-amber-400 inline" /> Las Vegas, NV
             </span>
           </div>
           <div className="flex items-center space-x-2 text-right flex-shrink-0">
@@ -75,9 +75,9 @@ export default function Navbar({ onOpenDonate, onOpenVolunteer }) {
               href={`mailto:${organizationInfo.email}`}
               className="flex items-center text-slate-300 hover:text-white transition-colors"
             >
-              <Mail className="w-3 h-3 mr-1 text-teal-400" />
+              <Mail className="w-3 h-3 mr-1 text-amber-400" />
               <span className="hidden md:inline">{organizationInfo.email}</span>
-              <span className="md:hidden font-medium text-teal-300">Contact</span>
+              <span className="md:hidden font-medium text-amber-300">Contact</span>
             </a>
           </div>
         </div>
@@ -92,10 +92,10 @@ export default function Navbar({ onOpenDonate, onOpenVolunteer }) {
               <img src="/logo-emblem.png" alt="GNAI Official Logo" className="w-10 h-10 sm:w-12 sm:h-12 object-contain transition-transform group-hover:scale-105 flex-shrink-0 drop-shadow-sm" />
               <div>
                 <div className="flex items-center space-x-1.5">
-                  <span className="text-lg sm:text-xl font-bold tracking-tight text-slate-900 group-hover:text-brand-700 transition-colors">
+                  <span className="text-lg sm:text-xl font-bold tracking-tight text-slate-900 group-hover:text-blue-900 transition-colors">
                     GNAI
                   </span>
-                  <span className="text-[10px] sm:text-xs font-semibold px-1.5 sm:px-2 py-0.2 rounded bg-brand-50 text-brand-700 border border-brand-200">
+                  <span className="text-[10px] sm:text-xs font-semibold px-1.5 sm:px-2 py-0.2 rounded bg-blue-50 text-blue-900 border border-blue-200">
                     501(c)(3)
                   </span>
                 </div>
@@ -111,7 +111,7 @@ export default function Navbar({ onOpenDonate, onOpenVolunteer }) {
                 <a
                   key={link.name}
                   href={link.href}
-                  className="text-sm font-medium text-slate-600 hover:text-brand-700 transition-colors py-1"
+                  className="text-sm font-medium text-slate-600 hover:text-blue-900 transition-colors py-1"
                 >
                   {link.name}
                 </a>
@@ -122,15 +122,15 @@ export default function Navbar({ onOpenDonate, onOpenVolunteer }) {
             <div className="hidden sm:flex items-center space-x-2.5">
               <button
                 onClick={onOpenVolunteer}
-                className="px-3.5 py-2 text-xs sm:text-sm font-medium text-brand-700 bg-brand-50 hover:bg-brand-100 rounded-lg transition-colors border border-brand-200"
+                className="px-3.5 py-2 text-xs sm:text-sm font-semibold text-blue-900 bg-blue-50 hover:bg-blue-100 rounded-lg transition-colors border border-blue-200"
               >
                 Volunteer
               </button>
               <button
                 onClick={onOpenDonate}
-                className="flex items-center px-4 py-2 text-xs sm:text-sm font-semibold text-white bg-gradient-to-r from-teal-600 to-teal-500 hover:from-teal-700 hover:to-teal-600 rounded-lg shadow-sm hover:shadow transition-all"
+                className="flex items-center px-4 py-2 text-xs sm:text-sm font-bold text-slate-950 bg-gradient-to-r from-amber-500 via-amber-400 to-yellow-500 hover:from-amber-600 hover:to-yellow-600 rounded-lg shadow-sm hover:shadow transition-all"
               >
-                <Heart className="w-4 h-4 mr-1.5 fill-white" />
+                <Heart className="w-4 h-4 mr-1.5 fill-slate-950 text-slate-950" />
                 Donate
               </button>
             </div>
@@ -139,9 +139,9 @@ export default function Navbar({ onOpenDonate, onOpenVolunteer }) {
             <div className="lg:hidden flex items-center space-x-1.5">
               <button
                 onClick={onOpenDonate}
-                className="flex sm:hidden items-center px-3 py-1.5 text-xs font-bold text-white bg-teal-600 hover:bg-teal-700 active:scale-95 rounded-lg shadow-sm transition"
+                className="flex sm:hidden items-center px-3 py-1.5 text-xs font-bold text-slate-950 bg-gradient-to-r from-amber-500 to-yellow-500 hover:from-amber-600 hover:to-yellow-600 active:scale-95 rounded-lg shadow-sm transition"
               >
-                <Heart className="w-3 h-3 mr-1 fill-white" />
+                <Heart className="w-3 h-3 mr-1 fill-slate-950 text-slate-950" />
                 Donate
               </button>
               <button
@@ -173,10 +173,10 @@ export default function Navbar({ onOpenDonate, onOpenVolunteer }) {
                         key={link.name}
                         href={link.href}
                         onClick={handleLinkClick}
-                        className="flex items-center justify-between px-3 py-3.5 rounded-xl text-slate-800 hover:text-brand-700 hover:bg-brand-50 active:bg-brand-100 text-sm font-semibold transition"
+                        className="flex items-center justify-between px-3 py-3.5 rounded-xl text-slate-800 hover:text-blue-900 hover:bg-blue-50 active:bg-blue-100 text-sm font-semibold transition"
                       >
                         <div className="flex items-center space-x-3">
-                          <div className="w-8 h-8 rounded-lg bg-slate-100 text-slate-600 flex items-center justify-center">
+                          <div className="w-8 h-8 rounded-lg bg-blue-50 text-blue-800 flex items-center justify-center">
                             <IconComp className="w-4 h-4" />
                           </div>
                           <span>{link.name}</span>
@@ -191,7 +191,7 @@ export default function Navbar({ onOpenDonate, onOpenVolunteer }) {
                 <div className="pt-4 px-3 space-y-2 text-xs text-slate-500">
                   <p className="font-semibold text-slate-700">Global Nurses Alliance Inc.</p>
                   <p className="flex items-start">
-                    <MapPin className="w-3.5 h-3.5 mr-1.5 text-teal-600 flex-shrink-0 mt-0.5" />
+                    <MapPin className="w-3.5 h-3.5 mr-1.5 text-amber-500 flex-shrink-0 mt-0.5" />
                     <span>9265 West Russell Road, Suite 240, Las Vegas, NV 89148</span>
                   </p>
                 </div>
@@ -204,9 +204,9 @@ export default function Navbar({ onOpenDonate, onOpenVolunteer }) {
                     setMobileMenuOpen(false);
                     onOpenDonate();
                   }}
-                  className="w-full flex items-center justify-center py-3.5 text-sm font-bold text-white bg-gradient-to-r from-teal-600 to-teal-500 rounded-xl shadow-md active:scale-98 transition"
+                  className="w-full flex items-center justify-center py-3.5 text-sm font-bold text-slate-950 bg-gradient-to-r from-amber-500 via-amber-400 to-yellow-500 rounded-xl shadow-md active:scale-98 transition"
                 >
-                  <Heart className="w-4 h-4 mr-2 fill-white" />
+                  <Heart className="w-4 h-4 mr-2 fill-slate-950 text-slate-950" />
                   Make a Tax-Deductible Donation
                 </button>
                 <button
@@ -214,7 +214,7 @@ export default function Navbar({ onOpenDonate, onOpenVolunteer }) {
                     setMobileMenuOpen(false);
                     onOpenVolunteer();
                   }}
-                  className="w-full py-3 text-sm font-semibold text-brand-700 bg-brand-50 border border-brand-200 rounded-xl active:bg-brand-100 transition"
+                  className="w-full py-3 text-sm font-semibold text-blue-900 bg-blue-50 border border-blue-200 rounded-xl active:bg-blue-100 transition"
                 >
                   Join as a Volunteer Nurse / Ally
                 </button>

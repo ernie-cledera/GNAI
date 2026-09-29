@@ -47,12 +47,12 @@ export default function DonationSection({ onOpenDonateModal }) {
   };
 
   return (
-    <section id="donate" className="py-14 sm:py-20 bg-gradient-to-b from-white via-teal-50/20 to-slate-50 relative overflow-hidden">
+    <section id="donate" className="py-14 sm:py-20 bg-gradient-to-b from-white via-blue-50/30 to-slate-50 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-10 sm:mb-14">
-          <span className="text-[11px] sm:text-xs font-bold uppercase tracking-widest text-teal-700 bg-teal-100/70 px-3 py-1 rounded-full border border-teal-200">
+          <span className="text-[11px] sm:text-xs font-bold uppercase tracking-widest text-brand-900 bg-amber-100 px-3 py-1 rounded-full border border-amber-300">
             501(c)(3) Tax-Deductible Giving
           </span>
           <h2 className="mt-2.5 text-2xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
@@ -69,7 +69,7 @@ export default function DonationSection({ onOpenDonateModal }) {
           {/* Frequency Toggle Banner */}
           <div className="bg-slate-900 px-4 sm:px-6 py-3.5 sm:py-4 flex flex-col sm:flex-row items-center justify-between gap-3 text-white">
             <div className="flex items-center space-x-2 text-xs sm:text-sm text-center sm:text-left">
-              <ShieldCheck className="w-4 h-4 text-teal-400 flex-shrink-0" />
+              <ShieldCheck className="w-4 h-4 text-amber-400 flex-shrink-0" />
               <span>100% Tax Deductible (EIN-Verified 501(c)(3) Charity)</span>
             </div>
             
@@ -79,7 +79,7 @@ export default function DonationSection({ onOpenDonateModal }) {
                 type="button"
                 onClick={() => setIsMonthly(false)}
                 className={`flex-1 sm:flex-initial px-3.5 py-1.5 rounded-lg text-xs font-bold transition active:scale-95 ${
-                  !isMonthly ? 'bg-teal-500 text-slate-950 shadow' : 'text-slate-300 hover:text-white'
+                  !isMonthly ? 'bg-amber-400 text-slate-950 shadow' : 'text-slate-300 hover:text-white'
                 }`}
               >
                 One-Time Gift
@@ -88,10 +88,10 @@ export default function DonationSection({ onOpenDonateModal }) {
                 type="button"
                 onClick={() => setIsMonthly(true)}
                 className={`flex-1 sm:flex-initial px-3.5 py-1.5 rounded-lg text-xs font-bold transition flex items-center justify-center gap-1 active:scale-95 ${
-                  isMonthly ? 'bg-teal-500 text-slate-950 shadow' : 'text-slate-300 hover:text-white'
+                  isMonthly ? 'bg-amber-400 text-slate-950 shadow' : 'text-slate-300 hover:text-white'
                 }`}
               >
-                <Sparkles className="w-3 h-3 text-amber-400" />
+                <Sparkles className="w-3 h-3 text-amber-700" />
                 Monthly Ally
               </button>
             </div>
@@ -102,7 +102,7 @@ export default function DonationSection({ onOpenDonateModal }) {
             {/* Tier Buttons */}
             <div>
               <label className="block text-xs font-bold uppercase tracking-wider text-slate-500 mb-2.5">
-                Select Contribution Amount {isMonthly && <span className="text-teal-600 font-semibold">(Monthly)</span>}
+                Select Contribution Amount {isMonthly && <span className="text-amber-600 font-semibold">(Monthly)</span>}
               </label>
               
               <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-2.5 sm:gap-3">
@@ -115,12 +115,12 @@ export default function DonationSection({ onOpenDonateModal }) {
                       onClick={() => handleSelectTier(tier.amount)}
                       className={`relative p-3 sm:p-4 rounded-xl text-center border-2 transition-all active:scale-95 ${
                         isSelected
-                          ? 'border-teal-500 bg-teal-50/60 text-slate-950 shadow-sm'
+                          ? 'border-amber-500 bg-amber-50/70 text-slate-950 shadow-sm ring-1 ring-amber-400'
                           : 'border-slate-200 hover:border-slate-300 bg-white text-slate-700'
                       }`}
                     >
                       {tier.popular && (
-                        <span className="absolute -top-2.5 left-1/2 -translate-x-1/2 bg-amber-500 text-white text-[9px] sm:text-[10px] font-extrabold uppercase px-2 py-0.5 rounded-full shadow-xs whitespace-nowrap">
+                        <span className="absolute -top-2.5 left-1/2 -translate-x-1/2 bg-amber-500 text-slate-950 font-extrabold text-[9px] sm:text-[10px] uppercase px-2 py-0.5 rounded-full shadow-xs whitespace-nowrap">
                           Most Chosen
                         </span>
                       )}
@@ -145,8 +145,8 @@ export default function DonationSection({ onOpenDonateModal }) {
                     placeholder="Enter custom amount"
                     value={customAmount}
                     onChange={handleCustomChange}
-                    className={`w-full pl-8 pr-4 py-2.5 rounded-xl border text-sm font-semibold focus:outline-none focus:ring-2 focus:ring-teal-500 ${
-                      customAmount ? 'border-teal-500 bg-teal-50/30' : 'border-slate-300'
+                    className={`w-full pl-8 pr-4 py-2.5 rounded-xl border text-sm font-semibold focus:outline-none focus:ring-2 focus:ring-brand-700 ${
+                      customAmount ? 'border-amber-500 bg-amber-50/30' : 'border-slate-300'
                     }`}
                   />
                 </div>
@@ -154,9 +154,9 @@ export default function DonationSection({ onOpenDonateModal }) {
             </div>
 
             {/* Impact Calculation Preview Card */}
-            <div className="bg-gradient-to-br from-teal-900 to-brand-950 text-white rounded-xl sm:rounded-2xl p-4 sm:p-6 shadow-inner">
+            <div className="bg-gradient-to-br from-brand-950 via-slate-900 to-brand-900 text-white rounded-xl sm:rounded-2xl p-4 sm:p-6 shadow-inner border border-blue-900/40">
               <div className="flex items-start space-x-3">
-                <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-teal-500/20 border border-teal-500/30 text-teal-300 flex items-center justify-center flex-shrink-0 mt-0.5">
+                <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-amber-400/20 border border-amber-400/30 text-amber-400 flex items-center justify-center flex-shrink-0 mt-0.5">
                   <Gift className="w-4 h-4 sm:w-5 sm:h-5" />
                 </div>
                 <div className="space-y-1">
@@ -178,7 +178,7 @@ export default function DonationSection({ onOpenDonateModal }) {
               <select
                 value={designation}
                 onChange={(e) => setDesignation(e.target.value)}
-                className="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 bg-white text-xs sm:text-sm font-medium text-slate-700 focus:outline-none focus:ring-2 focus:ring-teal-500"
+                className="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 bg-white text-xs sm:text-sm font-medium text-slate-700 focus:outline-none focus:ring-2 focus:ring-brand-700"
               >
                 <option value="Medical Missions & Prescriptions">Free Medical Missions & Prescription Medicines</option>
                 <option value="Disaster Relief Emergency Aid">Emergency Disaster Relief & Rapid Aid Packs</option>
@@ -192,9 +192,9 @@ export default function DonationSection({ onOpenDonateModal }) {
               <button
                 type="button"
                 onClick={handleProceed}
-                className="w-full py-3.5 sm:py-4 rounded-xl text-sm sm:text-base font-bold text-white bg-gradient-to-r from-teal-600 via-teal-500 to-emerald-600 hover:from-teal-700 hover:to-emerald-700 active:scale-98 shadow-lg shadow-teal-900/20 transition-all flex items-center justify-center space-x-2"
+                className="w-full py-3.5 sm:py-4 rounded-xl text-sm sm:text-base font-extrabold text-slate-950 bg-gradient-to-r from-amber-500 via-amber-400 to-yellow-500 hover:from-amber-400 hover:to-yellow-400 active:scale-98 shadow-lg shadow-amber-500/25 transition-all flex items-center justify-center space-x-2"
               >
-                <Heart className="w-4 h-4 sm:w-5 sm:h-5 fill-white" />
+                <Heart className="w-4 h-4 sm:w-5 sm:h-5 fill-slate-950 text-slate-950" />
                 <span>Complete ${activeAmount || 50} {isMonthly ? 'Monthly' : ''} Contribution</span>
                 <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 ml-1" />
               </button>
@@ -213,8 +213,8 @@ export default function DonationSection({ onOpenDonateModal }) {
                 <span className="block sm:inline">Payable to <strong>Global Nurses Alliance Incorporated</strong>:</span>
                 <span className="block text-slate-700 mt-0.5">{organizationInfo.address.full}</span>
               </div>
-              <div className="flex items-center space-x-1 text-teal-700 font-semibold flex-shrink-0">
-                <FileText className="w-4 h-4 mr-1" />
+              <div className="flex items-center space-x-1 text-brand-900 font-semibold flex-shrink-0">
+                <FileText className="w-4 h-4 mr-1 text-amber-500" />
                 <span>EIN verified non-profit</span>
               </div>
             </div>

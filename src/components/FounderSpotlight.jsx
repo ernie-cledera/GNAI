@@ -11,7 +11,7 @@ export default function FounderSpotlight() {
           <div className="grid grid-cols-1 lg:grid-cols-12">
             
             {/* Left Column: Portrait Badge, Honors & Quick Stats */}
-            <div className="lg:col-span-5 bg-gradient-to-br from-brand-950 via-slate-900 to-brand-900 text-white p-5 sm:p-8 lg:p-12 flex flex-col justify-between">
+            <div className="lg:col-span-5 bg-gradient-to-br from-brand-950 via-slate-900 to-blue-950 text-white p-5 sm:p-8 lg:p-12 flex flex-col justify-between">
               <div>
                 
                 <div className="inline-flex items-center px-2.5 py-1 rounded-full text-[11px] sm:text-xs font-semibold bg-amber-400/20 text-amber-300 border border-amber-400/30 mb-4 sm:mb-6">
@@ -21,9 +21,9 @@ export default function FounderSpotlight() {
 
                 <div className="flex items-center space-x-3.5 sm:space-x-4 mb-4 sm:mb-6">
                   {/* Stylized Nurse Avatar Icon */}
-                  <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl bg-gradient-to-tr from-teal-500 to-brand-500 p-0.5 shadow-xl flex-shrink-0">
+                  <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl bg-gradient-to-tr from-amber-400 to-blue-500 p-0.5 shadow-xl flex-shrink-0">
                     <div className="w-full h-full bg-slate-900 rounded-2xl flex items-center justify-center">
-                      <span className="text-xl sm:text-2xl font-black text-transparent bg-clip-text bg-gradient-to-r from-teal-300 to-blue-200">
+                      <span className="text-xl sm:text-2xl font-black text-transparent bg-clip-text bg-gradient-to-r from-amber-300 to-yellow-100">
                         CC
                       </span>
                     </div>
@@ -32,7 +32,7 @@ export default function FounderSpotlight() {
                     <h3 className="text-xl sm:text-2xl font-extrabold text-white leading-tight">
                       {founderDetails.name}
                     </h3>
-                    <p className="text-teal-300 font-semibold text-xs sm:text-sm">
+                    <p className="text-amber-300 font-semibold text-xs sm:text-sm">
                       {founderDetails.credentials}
                     </p>
                     <p className="text-slate-400 text-[11px] sm:text-xs mt-0.5">
@@ -63,7 +63,7 @@ export default function FounderSpotlight() {
                         <Award className="w-4 h-4 text-amber-400 mt-0.5 flex-shrink-0" />
                         <div>
                           <p className="text-xs font-bold text-white">{honor.title}</p>
-                          <p className="text-[11px] text-teal-300 font-medium">{honor.organization}</p>
+                          <p className="text-[11px] text-amber-300 font-medium">{honor.organization}</p>
                           <p className="text-[10px] sm:text-[11px] text-slate-300 mt-0.5 leading-normal">{honor.description}</p>
                         </div>
                       </div>
@@ -75,7 +75,7 @@ export default function FounderSpotlight() {
 
               <div className="mt-6 sm:mt-8 pt-4 sm:pt-6 border-t border-slate-800">
                 <p className="text-xs text-slate-400 flex items-start sm:items-center">
-                  <GraduationCap className="w-4 h-4 mr-2 text-teal-400 flex-shrink-0 mt-0.5 sm:mt-0" />
+                  <GraduationCap className="w-4 h-4 mr-2 text-amber-400 flex-shrink-0 mt-0.5 sm:mt-0" />
                   <span>Alma Mater: <strong className="text-slate-200">{founderDetails.almaMater}</strong></span>
                 </p>
               </div>
@@ -86,7 +86,7 @@ export default function FounderSpotlight() {
             <div className="lg:col-span-7 p-5 sm:p-8 lg:p-12 space-y-6 sm:space-y-8">
               
               <div>
-                <span className="text-[11px] sm:text-xs font-bold uppercase tracking-widest text-teal-600 bg-teal-50 px-3 py-1 rounded-full border border-teal-200">
+                <span className="text-[11px] sm:text-xs font-bold uppercase tracking-widest text-blue-800 bg-blue-50 px-3 py-1 rounded-full border border-blue-200">
                   Leadership Journey
                 </span>
                 <h3 className="mt-2.5 text-xl sm:text-3xl font-bold text-slate-900">
@@ -100,7 +100,7 @@ export default function FounderSpotlight() {
               </div>
 
               {/* Guiding Quote Box */}
-              <div className="bg-gradient-to-r from-amber-50 to-orange-50 border-l-4 border-amber-500 p-4 sm:p-5 rounded-r-xl">
+              <div className="bg-gradient-to-r from-amber-50 to-orange-50/60 border-l-4 border-amber-500 p-4 sm:p-5 rounded-r-xl">
                 <p className="text-slate-800 font-serif italic text-sm sm:text-lg">
                   "If you are in service to others, you are in service to God."
                 </p>
@@ -112,14 +112,14 @@ export default function FounderSpotlight() {
               {/* Institutional Career Record */}
               <div>
                 <h4 className="text-xs sm:text-sm font-bold text-slate-900 uppercase tracking-wider mb-3 sm:mb-4 flex items-center">
-                  <Hospital className="w-4 h-4 mr-2 text-brand-600" />
+                  <Hospital className="w-4 h-4 mr-2 text-blue-800" />
                   Clinical Appointments & Hospital History
                 </h4>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 sm:gap-3">
                   {founderDetails.careerHighlights.map((career, i) => (
                     <div key={i} className="p-3 sm:p-3.5 rounded-xl bg-slate-50 border border-slate-200/80">
                       <p className="text-xs font-bold text-slate-900">{career.role}</p>
-                      <p className="text-xs font-medium text-brand-700 mt-0.5">{career.institution}</p>
+                      <p className="text-xs font-medium text-blue-900 mt-0.5">{career.institution}</p>
                       <p className="text-[10px] sm:text-[11px] text-slate-500 mt-0.5">
                         {career.location} {career.period && `• ${career.period}`}
                       </p>

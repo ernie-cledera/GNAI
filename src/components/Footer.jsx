@@ -20,7 +20,7 @@ export default function Footer({ onOpenDonate }) {
               <img src="/logo-emblem.png" alt="GNAI Official Logo" className="w-10 h-10 sm:w-12 sm:h-12 object-contain flex-shrink-0 drop-shadow-md" />
               <div>
                 <span className="text-lg sm:text-xl font-black tracking-tight text-white">GNAI</span>
-                <p className="text-[10px] sm:text-xs font-semibold text-teal-400 tracking-wider uppercase">
+                <p className="text-[10px] sm:text-xs font-bold text-amber-400 tracking-wider uppercase">
                   Global Nurses Alliance Incorporated
                 </p>
               </div>
@@ -31,8 +31,8 @@ export default function Footer({ onOpenDonate }) {
             </p>
 
             <div className="pt-1">
-              <span className="inline-flex items-center px-2.5 py-1 rounded-full text-[10px] sm:text-xs font-semibold bg-teal-900/50 text-teal-300 border border-teal-700/50">
-                <ShieldCheck className="w-3.5 h-3.5 mr-1.5 text-teal-400 flex-shrink-0" />
+              <span className="inline-flex items-center px-2.5 py-1 rounded-full text-[10px] sm:text-xs font-semibold bg-amber-400/10 text-amber-300 border border-amber-400/20">
+                <ShieldCheck className="w-3.5 h-3.5 mr-1.5 text-amber-400 flex-shrink-0" />
                 501(c)(3) Public Charity • Tax-Deductible
               </span>
             </div>
@@ -45,22 +45,22 @@ export default function Footer({ onOpenDonate }) {
             </h4>
             <ul className="space-y-2 text-xs sm:text-sm text-slate-400">
               <li>
-                <a href="#about" className="hover:text-teal-400 transition py-0.5 inline-block">About Our Mission</a>
+                <a href="#about" className="hover:text-amber-300 transition py-0.5 inline-block">About Our Mission</a>
               </li>
               <li>
-                <a href="#focus-areas" className="hover:text-teal-400 transition py-0.5 inline-block">Programs & Focus Areas</a>
+                <a href="#focus-areas" className="hover:text-amber-300 transition py-0.5 inline-block">Programs & Focus Areas</a>
               </li>
               <li>
-                <a href="#timeline" className="hover:text-teal-400 transition py-0.5 inline-block">Our History & Growth</a>
+                <a href="#timeline" className="hover:text-amber-300 transition py-0.5 inline-block">Our History & Growth</a>
               </li>
               <li>
-                <a href="#leadership" className="hover:text-teal-400 transition py-0.5 inline-block">Founder & Leadership</a>
+                <a href="#leadership" className="hover:text-amber-300 transition py-0.5 inline-block">Founder & Leadership</a>
               </li>
               <li>
-                <a href="#ambassadors" className="hover:text-teal-400 transition py-0.5 inline-block">Nevada Ambassadors</a>
+                <a href="#ambassadors" className="hover:text-amber-300 transition py-0.5 inline-block">Nevada Ambassadors</a>
               </li>
               <li>
-                <a href="#get-involved" className="hover:text-teal-400 transition py-0.5 inline-block">Volunteer Opportunities</a>
+                <a href="#get-involved" className="hover:text-amber-300 transition py-0.5 inline-block">Volunteer Opportunities</a>
               </li>
             </ul>
           </div>
@@ -72,17 +72,17 @@ export default function Footer({ onOpenDonate }) {
             </h4>
             <div className="space-y-2.5 text-xs sm:text-sm text-slate-400">
               <div className="flex items-start space-x-2">
-                <MapPin className="w-4 h-4 text-teal-400 mt-0.5 flex-shrink-0" />
+                <MapPin className="w-4 h-4 text-amber-400 mt-0.5 flex-shrink-0" />
                 <span>{organizationInfo.address.full}</span>
               </div>
               <div className="flex items-center space-x-2">
-                <Mail className="w-4 h-4 text-teal-400 flex-shrink-0" />
-                <a href={`mailto:${organizationInfo.email}`} className="hover:text-teal-300 transition break-all">
+                <Mail className="w-4 h-4 text-amber-400 flex-shrink-0" />
+                <a href={`mailto:${organizationInfo.email}`} className="hover:text-amber-300 transition break-all">
                   {organizationInfo.email}
                 </a>
               </div>
               <div className="flex items-center space-x-2">
-                <Globe className="w-4 h-4 text-teal-400 flex-shrink-0" />
+                <Globe className="w-4 h-4 text-amber-400 flex-shrink-0" />
                 <span>{organizationInfo.website}</span>
               </div>
             </div>
@@ -90,7 +90,7 @@ export default function Footer({ onOpenDonate }) {
             <div className="pt-2">
               <button
                 onClick={onOpenDonate}
-                className="w-full sm:w-auto inline-flex items-center justify-center px-4 py-2.5 text-xs font-bold text-slate-950 bg-teal-400 hover:bg-teal-300 active:scale-98 rounded-lg transition"
+                className="w-full sm:w-auto inline-flex items-center justify-center px-4 py-2.5 text-xs font-extrabold text-slate-950 bg-gradient-to-r from-amber-500 via-amber-400 to-yellow-500 hover:from-amber-400 hover:to-yellow-400 active:scale-98 rounded-lg shadow-sm shadow-amber-500/20 transition"
               >
                 <Heart className="w-3.5 h-3.5 mr-1.5 fill-slate-950" />
                 Support Medical Missions

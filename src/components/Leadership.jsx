@@ -9,7 +9,7 @@ export default function Leadership() {
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-10 sm:mb-16">
-          <span className="text-[11px] sm:text-xs font-bold uppercase tracking-widest text-teal-600 bg-teal-50 px-3 py-1 rounded-full border border-teal-200">
+          <span className="text-[11px] sm:text-xs font-bold uppercase tracking-widest text-blue-800 bg-blue-50 px-3 py-1 rounded-full border border-blue-200">
             Governance & Officers
           </span>
           <h2 className="mt-2.5 text-2xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
@@ -32,11 +32,11 @@ export default function Leadership() {
             return (
               <div
                 key={index}
-                className="bg-slate-50/80 rounded-2xl p-5 sm:p-6 border border-slate-200/80 hover:border-brand-300 hover:shadow-md transition-all flex flex-col justify-between"
+                className="bg-slate-50/80 rounded-2xl p-5 sm:p-6 border border-slate-200/80 hover:border-amber-400/60 hover:shadow-md transition-all flex flex-col justify-between"
               >
                 <div>
                   <div className="flex items-center justify-between mb-3.5">
-                    <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-gradient-to-br from-brand-700 to-teal-600 text-white font-bold flex items-center justify-center text-xs sm:text-sm shadow-sm">
+                    <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-gradient-to-br from-brand-800 to-blue-700 text-amber-300 font-bold flex items-center justify-center text-xs sm:text-sm shadow-sm">
                       {initials}
                     </div>
                     <span className="text-[10px] sm:text-[11px] font-semibold px-2 py-0.5 rounded-full bg-white border border-slate-200 text-slate-700">
@@ -47,11 +47,11 @@ export default function Leadership() {
                   <h3 className="text-base sm:text-lg font-bold text-slate-900 leading-snug">
                     {officer.name}
                   </h3>
-                  <p className="text-xs sm:text-sm font-semibold text-brand-700 mt-0.5">
+                  <p className="text-xs sm:text-sm font-semibold text-blue-900 mt-0.5">
                     {officer.role}
                   </p>
                   {officer.subtitle && (
-                    <p className="text-[11px] text-teal-600 font-medium mt-0.5">
+                    <p className="text-[11px] text-amber-700 font-medium mt-0.5">
                       {officer.subtitle}
                     </p>
                   )}
@@ -61,7 +61,7 @@ export default function Leadership() {
                 </div>
 
                 <div className="mt-3.5 pt-3.5 border-t border-slate-200/60 flex items-center text-[10px] sm:text-[11px] font-medium text-slate-400">
-                  <Shield className="w-3 h-3 mr-1 text-teal-500" />
+                  <Shield className="w-3 h-3 mr-1 text-amber-500" />
                   GNAI Executive Committee
                 </div>
               </div>
@@ -70,7 +70,7 @@ export default function Leadership() {
         </div>
 
         {/* Board of Directors Section */}
-        <div className="bg-gradient-to-br from-slate-900 to-brand-950 rounded-2xl sm:rounded-3xl p-5 sm:p-8 lg:p-12 text-white shadow-xl">
+        <div className="bg-gradient-to-br from-slate-950 via-brand-950 to-blue-950 rounded-2xl sm:rounded-3xl p-5 sm:p-8 lg:p-12 text-white shadow-xl">
           <div className="max-w-3xl mx-auto text-center mb-6 sm:mb-10">
             <span className="text-[10px] sm:text-xs font-bold uppercase tracking-widest text-amber-300 bg-amber-400/20 px-3 py-1 rounded-full border border-amber-400/30">
               Institutional Oversight
@@ -89,11 +89,11 @@ export default function Leadership() {
                 key={idx}
                 className="bg-white/5 border border-white/10 rounded-xl p-3 sm:p-4 text-center hover:bg-white/10 transition-colors backdrop-blur-sm"
               >
-                <div className="w-8 h-8 sm:w-10 sm:h-10 mx-auto rounded-full bg-teal-500/20 text-teal-300 flex items-center justify-center font-bold text-[11px] sm:text-xs mb-2 border border-teal-500/30">
+                <div className="w-8 h-8 sm:w-10 sm:h-10 mx-auto rounded-full bg-amber-400/20 text-amber-300 flex items-center justify-center font-bold text-[11px] sm:text-xs mb-2 border border-amber-400/30">
                   {member.name.split(' ').map(n => n[0]).join('').slice(0, 2)}
                 </div>
                 <h4 className="text-xs sm:text-sm font-bold text-white leading-snug">{member.name}</h4>
-                <p className="text-[10px] sm:text-[11px] text-teal-300 font-medium mt-0.5">{member.role}</p>
+                <p className="text-[10px] sm:text-[11px] text-amber-300 font-medium mt-0.5">{member.role}</p>
               </div>
             ))}
           </div>

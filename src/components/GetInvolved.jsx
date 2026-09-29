@@ -26,7 +26,7 @@ export default function GetInvolved() {
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-10 sm:mb-16">
-          <span className="text-[11px] sm:text-xs font-bold uppercase tracking-widest text-teal-600 bg-teal-50 px-3 py-1 rounded-full border border-teal-200">
+          <span className="text-[11px] sm:text-xs font-bold uppercase tracking-widest text-brand-900 bg-amber-100 px-3 py-1 rounded-full border border-amber-300">
             Join the Alliance
           </span>
           <h2 className="mt-2.5 text-2xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
@@ -44,14 +44,14 @@ export default function GetInvolved() {
             
             <div className="bg-slate-50 rounded-2xl p-5 sm:p-8 border border-slate-200">
               <h3 className="text-lg sm:text-xl font-bold text-slate-900 mb-5 flex items-center">
-                <HeartHandshake className="w-5 h-5 mr-2 text-teal-600 flex-shrink-0" />
+                <HeartHandshake className="w-5 h-5 mr-2 text-amber-500 flex-shrink-0" />
                 Contact Headquarters
               </h3>
 
               <div className="space-y-4 sm:space-y-6">
                 {/* Address */}
                 <div className="flex items-start space-x-3">
-                  <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-teal-100 text-teal-700 flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-blue-100 text-brand-800 flex items-center justify-center flex-shrink-0 mt-0.5">
                     <MapPin className="w-4 h-4 sm:w-5 sm:h-5" />
                   </div>
                   <div>
@@ -102,24 +102,24 @@ export default function GetInvolved() {
             {/* Ways to Volunteer Highlights */}
             <div className="bg-gradient-to-br from-brand-900 to-slate-900 text-white rounded-2xl p-5 sm:p-7 space-y-3 sm:space-y-4">
               <h4 className="text-sm sm:text-base font-bold text-white flex items-center">
-                <UserPlus className="w-4 h-4 sm:w-5 sm:h-5 mr-2 text-teal-400 flex-shrink-0" />
+                <UserPlus className="w-4 h-4 sm:w-5 sm:h-5 mr-2 text-amber-400 flex-shrink-0" />
                 Who Can Join Us?
               </h4>
               <ul className="space-y-2 text-xs sm:text-sm text-slate-300">
                 <li className="flex items-start">
-                  <span className="w-1.5 h-1.5 rounded-full bg-teal-400 mr-2 mt-1.5 flex-shrink-0"></span>
+                  <span className="w-1.5 h-1.5 rounded-full bg-amber-400 mr-2 mt-1.5 flex-shrink-0"></span>
                   <span><strong>Registered Nurses & NPs:</strong> Triage, wound care, screenings</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="w-1.5 h-1.5 rounded-full bg-teal-400 mr-2 mt-1.5 flex-shrink-0"></span>
+                  <span className="w-1.5 h-1.5 rounded-full bg-amber-400 mr-2 mt-1.5 flex-shrink-0"></span>
                   <span><strong>Physicians & Specialists:</strong> Outpatient consultations</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="w-1.5 h-1.5 rounded-full bg-teal-400 mr-2 mt-1.5 flex-shrink-0"></span>
+                  <span className="w-1.5 h-1.5 rounded-full bg-amber-400 mr-2 mt-1.5 flex-shrink-0"></span>
                   <span><strong>Nursing Students:</strong> Clinical shadowing & health literacy</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="w-1.5 h-1.5 rounded-full bg-teal-400 mr-2 mt-1.5 flex-shrink-0"></span>
+                  <span className="w-1.5 h-1.5 rounded-full bg-amber-400 mr-2 mt-1.5 flex-shrink-0"></span>
                   <span><strong>Community Supporters:</strong> Supply packing, logistics, media</span>
                 </li>
               </ul>
@@ -133,8 +133,8 @@ export default function GetInvolved() {
               
               {submitted ? (
                 <div className="py-8 sm:py-12 text-center space-y-3 sm:space-y-4">
-                  <div className="w-14 h-14 sm:w-16 sm:h-16 bg-teal-100 text-teal-700 rounded-full flex items-center justify-center mx-auto">
-                    <CheckCircle2 className="w-8 h-8 sm:w-10 sm:h-10" />
+                  <div className="w-14 h-14 sm:w-16 sm:h-16 bg-blue-100 text-brand-800 rounded-full flex items-center justify-center mx-auto">
+                    <CheckCircle2 className="w-8 h-8 sm:w-10 sm:h-10 text-brand-800" />
                   </div>
                   <h3 className="text-xl sm:text-2xl font-bold text-slate-900">Thank You for Reaching Out!</h3>
                   <p className="text-slate-600 max-w-md mx-auto text-xs sm:text-sm leading-relaxed">
@@ -178,7 +178,7 @@ export default function GetInvolved() {
                         value={formData.name}
                         onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                         placeholder="e.g. Maria Santos, RN"
-                        className="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-base sm:text-sm focus:outline-none focus:ring-2 focus:ring-teal-500"
+                        className="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-base sm:text-sm focus:outline-none focus:ring-2 focus:ring-brand-700"
                       />
                     </div>
 
@@ -192,7 +192,7 @@ export default function GetInvolved() {
                         value={formData.email}
                         onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                         placeholder="yourname@domain.com"
-                        className="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-base sm:text-sm focus:outline-none focus:ring-2 focus:ring-teal-500"
+                        className="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-base sm:text-sm focus:outline-none focus:ring-2 focus:ring-brand-700"
                       />
                     </div>
                   </div>
@@ -207,7 +207,7 @@ export default function GetInvolved() {
                         value={formData.phone}
                         onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                         placeholder="(702) 555-0199"
-                        className="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-base sm:text-sm focus:outline-none focus:ring-2 focus:ring-teal-500"
+                        className="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-base sm:text-sm focus:outline-none focus:ring-2 focus:ring-brand-700"
                       />
                     </div>
 
@@ -218,7 +218,7 @@ export default function GetInvolved() {
                       <select
                         value={formData.role}
                         onChange={(e) => setFormData({ ...formData, role: e.target.value })}
-                        className="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-base sm:text-sm bg-white focus:outline-none focus:ring-2 focus:ring-teal-500"
+                        className="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-base sm:text-sm bg-white focus:outline-none focus:ring-2 focus:ring-brand-700"
                       >
                         <option value="Registered Nurse (RN)">Registered Nurse (RN)</option>
                         <option value="Nurse Practitioner / APRN">Nurse Practitioner / APRN</option>
@@ -241,7 +241,7 @@ export default function GetInvolved() {
                         value={formData.facility}
                         onChange={(e) => setFormData({ ...formData, facility: e.target.value })}
                         placeholder="e.g. Summerlin, UMC, Sunrise..."
-                        className="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-base sm:text-sm focus:outline-none focus:ring-2 focus:ring-teal-500"
+                        className="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-base sm:text-sm focus:outline-none focus:ring-2 focus:ring-brand-700"
                       />
                     </div>
 
@@ -252,7 +252,7 @@ export default function GetInvolved() {
                       <select
                         value={formData.interests}
                         onChange={(e) => setFormData({ ...formData, interests: e.target.value })}
-                        className="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-base sm:text-sm bg-white focus:outline-none focus:ring-2 focus:ring-teal-500"
+                        className="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-base sm:text-sm bg-white focus:outline-none focus:ring-2 focus:ring-brand-700"
                       >
                         <option value="Medical Missions & Field Outreach">Medical Missions & Field Outreach</option>
                         <option value="Disaster Relief Emergency Response">Disaster Relief Emergency Response</option>
@@ -272,15 +272,15 @@ export default function GetInvolved() {
                       value={formData.message}
                       onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                       placeholder="Share your nursing specialty, language proficiencies, or how you would like to support GNAI's missions..."
-                      className="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-base sm:text-sm focus:outline-none focus:ring-2 focus:ring-teal-500"
+                      className="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-base sm:text-sm focus:outline-none focus:ring-2 focus:ring-brand-700"
                     ></textarea>
                   </div>
 
                   <button
                     type="submit"
-                    className="w-full py-3.5 rounded-xl text-sm font-bold text-white bg-brand-700 hover:bg-brand-800 active:scale-98 transition flex items-center justify-center space-x-2 shadow-md"
+                    className="w-full py-3.5 rounded-xl text-sm font-extrabold text-slate-950 bg-gradient-to-r from-amber-500 via-amber-400 to-yellow-500 hover:from-amber-400 hover:to-yellow-400 active:scale-98 transition flex items-center justify-center space-x-2 shadow-lg shadow-amber-500/20"
                   >
-                    <Send className="w-4 h-4" />
+                    <Send className="w-4 h-4 text-slate-950" />
                     <span>Submit Volunteer & Alliance Application</span>
                   </button>
                 </form>

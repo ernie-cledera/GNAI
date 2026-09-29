@@ -30,7 +30,7 @@ export default function FocusAreas({ onOpenDonate, onOpenVolunteer }) {
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-14">
-          <span className="text-[11px] sm:text-xs font-bold uppercase tracking-widest text-teal-600 bg-teal-50 px-3 py-1 rounded-full border border-teal-200">
+          <span className="text-[11px] sm:text-xs font-bold uppercase tracking-widest text-blue-800 bg-blue-50 px-3 py-1 rounded-full border border-blue-200">
             What We Do
           </span>
           <h2 className="mt-2.5 text-2xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
@@ -56,7 +56,7 @@ export default function FocusAreas({ onOpenDonate, onOpenVolunteer }) {
                     : 'bg-slate-100 text-slate-600 hover:bg-slate-200 hover:text-slate-900'
                 }`}
               >
-                <IconComponent className={`w-4 h-4 ${isActive ? 'text-teal-400' : 'text-slate-500'}`} />
+                <IconComponent className={`w-4 h-4 ${isActive ? 'text-amber-400' : 'text-slate-500'}`} />
                 <span>{area.title}</span>
               </button>
             );
@@ -64,12 +64,12 @@ export default function FocusAreas({ onOpenDonate, onOpenVolunteer }) {
         </div>
 
         {/* Active Focus Area Detailed Showcase Card */}
-        <div className="bg-gradient-to-br from-slate-50 to-teal-50/40 rounded-2xl sm:rounded-3xl border border-slate-200/80 p-5 sm:p-8 lg:p-12 shadow-sm mb-10 sm:mb-16">
+        <div className="bg-gradient-to-br from-slate-50 via-blue-50/20 to-amber-50/20 rounded-2xl sm:rounded-3xl border border-slate-200/80 p-5 sm:p-8 lg:p-12 shadow-sm mb-10 sm:mb-16">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-10 items-center">
             
             <div className="lg:col-span-7 space-y-4 sm:space-y-6">
-              <div className="inline-flex items-center space-x-2 px-2.5 py-1 rounded-lg bg-teal-100 text-teal-800 text-[11px] sm:text-xs font-semibold">
-                <CurrentIcon className="w-3.5 h-3.5" />
+              <div className="inline-flex items-center space-x-2 px-2.5 py-1 rounded-lg bg-blue-100 text-blue-900 text-[11px] sm:text-xs font-semibold">
+                <CurrentIcon className="w-3.5 h-3.5 text-blue-700" />
                 <span>Focus Pillar 0{activeTab + 1} of 0{focusAreas.length}</span>
               </div>
 
@@ -89,7 +89,7 @@ export default function FocusAreas({ onOpenDonate, onOpenVolunteer }) {
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-3">
                   {currentArea.highlights.map((item, i) => (
                     <div key={i} className="flex items-start space-x-2">
-                      <CheckCircle2 className="w-4 h-4 text-teal-600 mt-0.5 flex-shrink-0" />
+                      <CheckCircle2 className="w-4 h-4 text-blue-700 mt-0.5 flex-shrink-0" />
                       <span className="text-xs sm:text-sm font-medium text-slate-700">{item}</span>
                     </div>
                   ))}
@@ -100,14 +100,14 @@ export default function FocusAreas({ onOpenDonate, onOpenVolunteer }) {
               <div className="pt-2 sm:pt-4 flex flex-col sm:flex-row items-stretch sm:items-center gap-2.5 sm:gap-4">
                 <button
                   onClick={onOpenDonate}
-                  className="w-full sm:w-auto inline-flex items-center justify-center px-5 py-3 rounded-xl text-xs sm:text-sm font-bold text-white bg-teal-600 hover:bg-teal-700 active:scale-98 transition shadow-sm"
+                  className="w-full sm:w-auto inline-flex items-center justify-center px-5 py-3 rounded-xl text-xs sm:text-sm font-extrabold text-slate-950 bg-gradient-to-r from-amber-500 via-amber-400 to-yellow-500 hover:from-amber-600 hover:to-yellow-600 active:scale-98 transition shadow-sm"
                 >
-                  <Heart className="w-4 h-4 mr-2 fill-white" />
+                  <Heart className="w-4 h-4 mr-2 fill-slate-950 text-slate-950" />
                   Fund This Program
                 </button>
                 <button
                   onClick={onOpenVolunteer}
-                  className="w-full sm:w-auto inline-flex items-center justify-center px-5 py-3 rounded-xl text-xs sm:text-sm font-semibold text-brand-700 bg-white border border-brand-200 hover:bg-brand-50 active:bg-brand-100 transition"
+                  className="w-full sm:w-auto inline-flex items-center justify-center px-5 py-3 rounded-xl text-xs sm:text-sm font-semibold text-blue-900 bg-white border border-blue-200 hover:bg-blue-50 active:bg-blue-100 transition"
                 >
                   Volunteer Your Expertise
                   <ArrowRight className="w-4 h-4 ml-1.5" />
@@ -118,7 +118,7 @@ export default function FocusAreas({ onOpenDonate, onOpenVolunteer }) {
             {/* Impact Metric & Visual Info Card */}
             <div className="lg:col-span-5">
               <div className="bg-white rounded-xl sm:rounded-2xl p-5 sm:p-8 border border-slate-200 shadow-sm space-y-4 sm:space-y-6">
-                <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-xl sm:rounded-2xl bg-teal-600 text-white flex items-center justify-center shadow-md shadow-teal-600/30">
+                <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-xl sm:rounded-2xl bg-gradient-to-br from-brand-800 to-blue-900 text-amber-300 flex items-center justify-center shadow-md shadow-blue-900/30">
                   <CurrentIcon className="w-6 h-6 sm:w-7 sm:h-7" />
                 </div>
                 
@@ -150,11 +150,11 @@ export default function FocusAreas({ onOpenDonate, onOpenVolunteer }) {
                 onClick={() => setActiveTab(idx)}
                 className={`cursor-pointer p-3 sm:p-4 rounded-xl border transition-all active:scale-95 ${
                   isSelected
-                    ? 'border-teal-500 bg-teal-50/60 shadow-sm'
+                    ? 'border-amber-400 bg-amber-50/40 shadow-sm'
                     : 'border-slate-200 bg-white hover:border-slate-300 hover:bg-slate-50'
                 }`}
               >
-                <IconComp className={`w-4 h-4 sm:w-5 sm:h-5 mb-1.5 ${isSelected ? 'text-teal-600' : 'text-slate-500'}`} />
+                <IconComp className={`w-4 h-4 sm:w-5 sm:h-5 mb-1.5 ${isSelected ? 'text-amber-500' : 'text-slate-500'}`} />
                 <h4 className="text-xs sm:text-xs font-bold text-slate-900 line-clamp-1">{area.title}</h4>
                 <p className="text-[10px] sm:text-[11px] text-slate-500 mt-0.5 line-clamp-2">{area.shortDesc}</p>
               </div>

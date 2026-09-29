@@ -32,7 +32,7 @@ export default function MissionVision() {
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-10 sm:mb-16">
-          <span className="text-[11px] sm:text-xs font-bold uppercase tracking-widest text-teal-600 bg-teal-50 px-3 py-1 rounded-full border border-teal-200">
+          <span className="text-[11px] sm:text-xs font-bold uppercase tracking-widest text-blue-800 bg-blue-50 px-3 py-1 rounded-full border border-blue-200">
             Purpose & Calling
           </span>
           <h2 className="mt-2.5 text-2xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
@@ -68,7 +68,7 @@ export default function MissionVision() {
           {/* Vision Card */}
           <div className="relative bg-white rounded-2xl p-6 sm:p-10 shadow-sm border border-slate-200 hover:shadow-md transition-shadow flex flex-col justify-between">
             <div>
-              <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-teal-50 text-teal-700 flex items-center justify-center mb-4 sm:mb-6 border border-teal-100">
+              <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-amber-50 text-amber-700 flex items-center justify-center mb-4 sm:mb-6 border border-amber-200">
                 <Compass className="w-5 h-5 sm:w-6 sm:h-6" />
               </div>
               <h3 className="text-xl sm:text-2xl font-bold text-slate-900 mb-3 sm:mb-4 flex items-center">
@@ -78,8 +78,8 @@ export default function MissionVision() {
                 "{organizationInfo.vision}"
               </p>
             </div>
-            <div className="mt-5 pt-4 sm:pt-6 border-t border-slate-100 flex items-center text-xs sm:text-sm font-semibold text-teal-700">
-              <span className="inline-block w-2 h-2 rounded-full bg-teal-600 mr-2 flex-shrink-0"></span>
+            <div className="mt-5 pt-4 sm:pt-6 border-t border-slate-100 flex items-center text-xs sm:text-sm font-semibold text-amber-800">
+              <span className="inline-block w-2 h-2 rounded-full bg-amber-500 mr-2 flex-shrink-0"></span>
               Advocacy • Upliftment • Inter-Agency Synergy
             </div>
           </div>
@@ -87,8 +87,8 @@ export default function MissionVision() {
         </div>
 
         {/* Guiding Philosophy Callout with Official GNAI Insignia */}
-        <div className="relative overflow-hidden rounded-2xl bg-gradient-to-r from-brand-900 via-brand-800 to-teal-900 text-white p-6 sm:p-10 lg:p-12 shadow-xl mb-10 sm:mb-16">
-          <div className="absolute right-0 top-0 translate-x-12 -translate-y-12 w-64 h-64 bg-teal-500/10 rounded-full blur-2xl pointer-events-none"></div>
+        <div className="relative overflow-hidden rounded-2xl bg-gradient-to-r from-brand-950 via-blue-950 to-brand-900 text-white p-6 sm:p-10 lg:p-12 shadow-xl mb-10 sm:mb-16 border border-blue-900/40">
+          <div className="absolute right-0 top-0 translate-x-12 -translate-y-12 w-64 h-64 bg-amber-500/10 rounded-full blur-2xl pointer-events-none"></div>
           
           <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-6 sm:gap-8 text-center md:text-left">
             <div className="w-24 h-24 sm:w-32 sm:h-32 flex-shrink-0 bg-white/10 rounded-2xl sm:rounded-3xl p-2.5 sm:p-3 border border-white/15 backdrop-blur-md flex items-center justify-center shadow-2xl">
@@ -100,7 +100,7 @@ export default function MissionVision() {
                 <span className="text-[10px] sm:text-xs uppercase font-bold tracking-widest text-amber-300 bg-amber-400/20 px-2.5 py-0.5 rounded-full border border-amber-400/30">
                   Founder's Guiding Creed
                 </span>
-                <span className="text-[10px] sm:text-xs font-semibold text-teal-300">
+                <span className="text-[10px] sm:text-xs font-semibold text-amber-300">
                   Let's Unite • Give Love • Heal the World • Restore Humanity
                 </span>
               </div>
@@ -110,7 +110,7 @@ export default function MissionVision() {
               </blockquote>
               
               <div className="pt-1">
-                <p className="text-xs sm:text-base font-semibold text-teal-200">{organizationInfo.quote.author}</p>
+                <p className="text-xs sm:text-base font-semibold text-amber-300">{organizationInfo.quote.author}</p>
                 <p className="text-[10px] sm:text-xs text-slate-300 uppercase tracking-wider">{organizationInfo.quote.role}</p>
               </div>
             </div>
@@ -122,8 +122,8 @@ export default function MissionVision() {
           {pillars.map((pillar, idx) => {
             const Icon = pillar.icon;
             return (
-              <div key={idx} className="bg-white p-5 sm:p-6 rounded-xl border border-slate-200/80 shadow-sm hover:border-teal-300 transition-colors">
-                <div className="w-9 h-9 rounded-lg bg-teal-50 text-teal-600 flex items-center justify-center mb-3">
+              <div key={idx} className="bg-white p-5 sm:p-6 rounded-xl border border-slate-200/80 shadow-sm hover:border-amber-400 transition-colors">
+                <div className="w-9 h-9 rounded-lg bg-blue-50 text-blue-700 flex items-center justify-center mb-3">
                   <Icon className="w-4 h-4 sm:w-5 sm:h-5" />
                 </div>
                 <h4 className="text-sm sm:text-base font-bold text-slate-900 mb-1.5">{pillar.title}</h4>
